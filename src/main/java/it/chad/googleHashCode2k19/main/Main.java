@@ -3,13 +3,17 @@ package it.chad.googleHashCode2k19.main;
 import it.chad.googleHashCode2k19.parser.Parser;
 import it.chad.googleHashCode2k19.solver.Solver;
 
-public class Main {
-  public static void main(String[] args) {
+import java.io.IOException;
 
-    String[] files = {"a", "b", "c", "d", "e"};
+public class Main {
+  public static void main(String[] args) throws IOException {
+
+    String[] files = {"b"};
 
     for (String i : files) {
-      System.out.println(Solver.solve(Parser.parse(i + ".txt")));
+      
+      Solver.output(Solver.solve(Parser.parse("in/" + i + ".txt")),("out/" + i + ".txt"));
+      
     }
   }
 }

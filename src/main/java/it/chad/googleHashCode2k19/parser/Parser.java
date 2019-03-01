@@ -11,7 +11,7 @@ public class Parser {
 
   public static ArrayList<Image> parse(String filePath) {
 
-    ArrayList<Image> images = new ArrayList<>();
+    ArrayList<Image> images = new ArrayList<Image>();
     try {
 
       Scanner scanner = new Scanner(new File(filePath));

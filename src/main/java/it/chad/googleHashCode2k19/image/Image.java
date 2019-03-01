@@ -6,7 +6,7 @@ import java.util.Set;
 public class Image {
 
   private int id;
-  private Set<String> tags = new HashSet<>();
+  private Set<String> tags = new HashSet<String>();
   private boolean isVertical;
 
   public Image() {}
@@ -50,6 +50,7 @@ public class Image {
 
   @Override
   public String toString() {
-    return "Image{" + "id=" + id + ", tags=" + tags + ", isVertical=" + isVertical + '}';
+    //return "Image{" + "id=" + id + ", tags=" + tags + ", isVertical=" + isVertical + '}';
+    return ""+id;
   }
 }
