@@ -8,7 +8,7 @@ import java.io.IOException;
 public class Main {
   public static void main(String[] args) throws IOException {
 
-    String[] files = {"b"};
+    String[] files = {"a", "b", "c", "d", "e"};
 
     for (String i : files) {
       

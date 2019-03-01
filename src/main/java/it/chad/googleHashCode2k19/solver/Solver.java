@@ -2,15 +2,20 @@ package it.chad.googleHashCode2k19.solver;
 
 import com.google.common.collect.Sets;
 import it.chad.googleHashCode2k19.image.Image;
+import org.checkerframework.checker.units.qual.A;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
 
 public class Solver {
 
   public static ArrayList<Image> solve(ArrayList<Image> images) {
-
+    
+    preProcess(images);
     
     Image[] array = new Image[images.size()];
     
@@ -65,6 +70,35 @@ public class Solver {
     int rightOuterJoin = Sets.difference(image1.getTags(), image0.getTags()).size();
 
     return Math.min(innerJoin, Math.min(leftOuterJoin, rightOuterJoin));
+  }
+  
+  public static void preProcess(ArrayList<Image> images) {
+  
+    Comparator<Image> comparator = new Comparator<Image>() {
+      public int compare(final Image o1, final Image o2) {
+        return o1.getTags().size() - o2.getTags().size();
+      }
+    };
+    //(o1, o2) -> o1.getTags().size() - o2.getTags().size()
+  
+  
+    ArrayList<Image> imageArrayList = new ArrayList<Image>();
+    if(images.size() > 10) {
+      //Collections.sort(images, comparator);
+
+      for (int i = 0; i < 10; i++) {
+        imageArrayList.add(images.get(i));
+      }
+    }
+    
+    images = imageArrayList;
+    
+    for (int i1 = 0; i1 < images.size(); i1++) {
+      final Image i = images.get(i1);
+      if (i.isVertical()) {
+        images.remove(i);
+      }
+    }
   }
   
   
