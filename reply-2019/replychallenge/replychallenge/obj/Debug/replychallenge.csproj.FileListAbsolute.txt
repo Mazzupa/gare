@@ -1,9 +1,0 @@
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.csprojAssemblyReference.cache
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.Form1.resources
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.Properties.Resources.resources
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.csproj.GenerateResource.cache
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.csproj.CoreCompileInputs.cache
-c:\users\raulm\source\repos\replychallenge\replychallenge\bin\Debug\replychallenge.exe
-c:\users\raulm\source\repos\replychallenge\replychallenge\bin\Debug\replychallenge.pdb
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.exe
-c:\users\raulm\source\repos\replychallenge\replychallenge\obj\Debug\replychallenge.pdb
