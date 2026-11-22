@@ -1,0 +1,13 @@
+bin/
+obj/
+target/
+*.class
+*.jar
+*.exe
+*.pdb
+*.dll
+.idea/
+.classpath
+.project
+.settings/
+.DS_Store
